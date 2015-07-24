@@ -1,0 +1,9 @@
+<h1>Showing: <%= @place.name %></h1>
+
+<p>Description: <%= @place.description %></p>
+<p>Address: <%= @place.address %></p>
+
+<%= link_to "Edit", edit_place_path(@place) %> |
+<%= link_to 'Delete', place_path(@place), method: :delete, data: { confirm: 'Are you sure?' } %>
+<br>
+<%= link_to "Back to Index", places_path %>
